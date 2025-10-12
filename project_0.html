@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: #f5f5f5; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        header { background: #2c3e50; color: white; padding: 15px 0; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; }
+        nav a { color: white; text-decoration: none; margin-left: 20px; }
+        
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                       url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover; color: white; text-align: center; padding: 100px 20px;
+        }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
+        .btn { 
+            display: inline-block; background: #e74c3c; color: white; 
+            padding: 12px 30px; text-decoration: none; border-radius: 5px; margin-top: 20px;
+        }
+        
+        /* Sections */
+        section { padding: 60px 0; }
+        .section-title { text-align: center; margin-bottom: 40px; font-size: 2rem; }
+        
+        /* New Arrivals */
+        .new-arrivals { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .arrival-card { background: white; padding: 20px; text-align: center; border-radius: 5px; }
+        
+        /* Sale Banner */
+        .sale-banner { background: #3498db; color: white; text-align: center; padding: 40px; border-radius: 10px; }
+        
+        /* App Download */
+        .app-download { background: #2c3e50; color: white; text-align: center; }
+        .app-buttons { display: flex; justify-content: center; gap: 20px; margin-top: 20px; }
+        .app-btn { background: white; color: #333; padding: 10px 20px; border-radius: 5px; text-decoration: none; }
+        
+        /* Newsletter */
+        .newsletter-form { display: flex; max-width: 400px; margin: 20px auto; }
+        .newsletter-form input { flex: 1; padding: 12px; border: 1px solid #ddd; }
+        .newsletter-form button { background: #e74c3c; color: white; border: none; padding: 0 20px; }
+        
+        /* Footer */
+        footer { background: #34495e; color: white; padding: 40px 0 20px; }
+        .footer-content { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+        .footer-column h3 { margin-bottom: 20px; color: #e74c3c; }
+        .footer-column ul { list-style: none; }
+        .footer-column li { margin-bottom: 10px; }
+        .footer-column a { color: #bdc3c7; text-decoration: none; }
+        
+        @media (max-width: 768px) {
+            .new-arrivals, .footer-content { grid-template-columns: 1fr; }
+            .header-content { flex-direction: column; gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">FASHIONSTORE</div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">New Arrivals</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>LET'S EXPLORE UNIQUE CLOTHES.</h1>
+            <p>Live for influential and innovative fashion!</p>
+            <!-- <a href="#" class="btn">Shop Now</a> -->
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">NEW ARRIVALS</h2>
+        <div class="new-arrivals">
+            <div class="arrival-card">
+                <h3>Hoodies & Sweatshirt</h3>
+                <p>Veiw All !</p>
+            </div>
+            <div class="arrival-card">
+                <h3>Coats & Parkas</h3>
+                <p>Veiw All !</p>
+            </div>
+            <div class="arrival-card">
+                <h3>Tees & T-Shirt</h3>
+                <p>Veiw All !</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="sale-banner">
+            <h2>TECH SALE NOW</h2>
+            </p><p></p>
+            <p>Spend minimal ₹1000 get 30% off voucher code for your next purchase</p>
+            <p>Starts from 01-10-2025</p>
+            <p><em></em></p>
+            <a href="#" class="btn">SHOP NOW</a>
+        </div>
+    </section>
+
+    <section class="container" style="text-align: center;">
+        <!-- <h2>Young's Favourite</h2>
+        <p><strong>Trending on Instagram</strong></p> -->
+        <a href="#" class="btn">Explore Now!</a>
+    </section>
+<!-- 
+    <section class="app-download">
+        <div class="container">
+            <h2>DOWNLOAD APP & GET THE VOUCHER!</h2>
+            <p>Get 30% off for first transaction using our mobile app</p>
+            <div class="app-buttons">
+                <a href="#" class="app-btn">App Store</a>
+                <a href="#" class="app-btn">Google Play</a>
+            </div>
+        </div>
+    </section> -->
+
+    <section style="text-align: center;">
+        <div class="container">
+            <h2>Join shopping community to get monthly Notifications</h2>
+            <p>Type your email down below.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Add your email here" required>
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>FASHION</h3>
+                    <p>Complete your style with awesome clothes from us.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Link</h3>
+                    <ul>
+                        <li><a href="#">Share Location</a></li>
+                        <li><a href="#">Online Training</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms & conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input').value;
+            alert(Thank you for subscribing with: ${email});
+            this.reset();
+        });
+    </script>
+</body>
+</html>
