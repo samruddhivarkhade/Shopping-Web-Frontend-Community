@@ -79,9 +79,15 @@ body {
   background: #191818;
 }
 
-/*Hero Section*/
+
 .hero {
-  padding: 5rem 3rem;
+  background-image: url("https://img.freepik.com/free-photo/carefree-stylish-woman-wearing-trendy-sunglasses-camera-feeling-confident-attractive-pink-background-sensual-pretty-girl-with-cute-eyewear-face-funky-hairstyle_482257-51055.jpg?semt=ais_hybrid&w=740&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-inner {
@@ -260,7 +266,7 @@ body {
 }
 
 .banner-left {
-  background: url('image.png') center/cover no-repeat;
+  background: url('https://t3.ftcdn.net/jpg/13/72/51/48/360_F_1372514814_ZzkQhmCYf2XyTK7pWaNtfBV20YKboehj.jpg') center/cover no-repeat;
 }
 
 .banner-right {
@@ -514,3 +520,4 @@ body {
   font-size: 0.9rem;
   color: #D9D9D9;
 }
+
